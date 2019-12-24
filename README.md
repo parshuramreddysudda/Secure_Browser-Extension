@@ -1,4 +1,3 @@
-# chrome-ext-sample
-Sample chrome extension that replaces all links with given text
+# Chrome-Extension-For-Securing-Your-Tracks
 
-Made to learn about the way extensions interact with the DOM as practice for a bigger project.
+This Extension helps to secure your tracks on internet with simple clicks
