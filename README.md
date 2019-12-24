@@ -1,2 +1,4 @@
-# Smart_Browser-Extension
-A Add-on for  Browser for Quick switch for JS,Cookie,Microphone,Camera,Location
+# chrome-ext-sample
+Sample chrome extension that replaces all links with given text
+
+Made to learn about the way extensions interact with the DOM as practice for a bigger project.

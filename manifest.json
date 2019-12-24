@@ -1,0 +1,26 @@
+{
+    "name": "Secure_browser_Extension",
+    "short_name": "Secure_your_tracks",
+    "author": "Decrypter",
+    "homepage_url": "http://fb.com/192.168.0.a",
+    "description": "A Extension By Parshuram for securing your tracks over internet ",
+    "version": "1",
+    "manifest_version": 2,
+    "icons": {
+        "48": "icons/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "favicon.png",
+        "default_popup": "popup.html",
+        "default_title": "ChromiePop"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": true,
+        "js":      ["scripts/content.js"]
+    }],
+    "permissions": [
+       "tabs", "activeTab", "webRequest", "webRequestBlocking", "<all_urls>", "storage","contentSettings"]
+    
+}
+

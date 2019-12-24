@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/toogle.css">
+</head>
+<body>
+    <style>
+      .container {
+        max-height: 600px;
+        min-height: 300px;
+        width: 250px;
+		color: white!important;
+        border: 2px solid rgba(0,0,0,0.3);
+        border-radius: 2px;
+       background: rgb(15,15,15,0.83);
+      }
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+      .patient-list {
+        max-height: 250px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+	    li{
+		    list-style-type: none;
+	    }
+	    .textLabel{
+		    margin: auto;
+	    }
+	    .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+	    
+  .toggle.ios .toggle-handle { border-radius: 20px; }
+
+    </style>
+    <div class="container">
+        
+          <p id="status"></p>
+	    <div class="row">
+	    <div class="col-xs-6 textLabel" >
+		    
+		    
+		    <h5>JavaScript</h5>
+		    </div>
+	    <div class="col-xs-6">
+		    
+		   
+		    
+		    <input id="toggle-event" type="checkbox" data-toggle="toggle" data-on="Disabled" data-off="Enabled" data-style="ios" data-offstyle="success" data-onstyle="danger" data-width="90" data-height="25">
+
+
+		    
+		    </div>
+	    
+	    </div><br>
+	        <div class="row">
+	    <div class="col-xs-6 textLabel" >
+		    
+		    
+		    <h5>JavaScript</h5>
+		    </div>
+	    <div class="col-xs-6">
+		    
+		   
+		    
+		    <input id="toggle-event" type="checkbox" data-toggle="toggle" data-on="Disabled" data-off="Enabled" data-style="ios">
+
+
+		    
+		    </div>
+	    
+	    </div>
+        
+	   <div class="">
+	
+	    <li>
+            <button id="jsOff" class="btn btn-small" title="Turn off Javascript"> <img src="icons/icon.png" style="width: 20px;"></button>
+            <button id="jsOn" class="btn btn-small" title="Turn On Javascript" style="display: none;"><img src="icons/icon.png" style="width: 20px;filter: grayscale(100%)"> </button>
+
+          </li>
+          <li>
+            <button id="micOff" class="btn btn-small" title="Turn off Microphone"> <img src="icons/icon.png" style="width: 20px;"></button>
+            <button id="micOn" class="btn btn-small" title="Turn On Microphone" style="display: none;"><img src="icons/icon.png" style="width: 20px;filter: grayscale(100%)"> </button>
+
+          </li>
+          <li>
+            <button id="locOff" class="btn btn-small" title="Turn off Location"> <img src="icons/icon.png" style="width: 20px;"></button>
+            <button id="locOn" class="btn btn-small" title="Turn On Location" style="display: none;"><img src="icons/icon.png" style="width: 20px; filter: grayscale(100%)"> </button>
+
+          </li>
+          <li>
+            <button id="camOff" class="btn btn-small" title="Turn off Camera"> <img src="icons/icon.png" style="width: 20px;"></button>
+            <button id="camOn" class="btn btn-small" title="Turn On Camera" style="display: none;"><img src="icons/icon.png" style="width: 20px;filter: grayscale(100%)"> </button>
+
+          </li>
+	
+
+
+    </div>
+	</div>
+    <script src="/scripts/jquery.min.js" type="text/javascript"></script>
+	 <script src="event.js"></script>
+    <script src="/scripts/extension.js" type="text/javascript"></script>
+	<script src="scripts/toggle.js"></script>
+	<script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  })
+</script>
+	<script>
+ 
+</script>
+		    
+</body>
+</html>
+
