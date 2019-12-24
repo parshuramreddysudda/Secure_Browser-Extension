@@ -1,8 +1,6 @@
-let javaOff = $('#jsOff');
-let javaOn = $('#jsOn');
 
  $(function() {
-    $('#toggle-event').change(function() {
+    $('#toggle-eventJS').change(function() {
 	    
 	
 	    if($(this).prop('checked'))
@@ -44,53 +42,9 @@ let javaOn = $('#jsOn');
 				     
 )
   })
-javaOff.bind('click', function() {
-	
-	
-	
-  chrome.contentSettings.javascript.set({
-    primaryPattern: "<all_urls>",
-    setting: "block",
-    scope: "regular"
-  });
-  chrome.tabs.query({
-    active: true,
-    currentWindow: true
-  }, function(arrayOfTabs) {
-    var code = 'window.location.reload();';
-    chrome.tabs.executeScript(arrayOfTabs[0].id, {
-      code: code
-    });
-  });
-
-  document.getElementById('jsOff').style.display = 'none';
-  document.getElementById('jsOn').style.display = 'block';
-});
 
 
 
-javaOn.bind('click', function() {
-  chrome.contentSettings.javascript.set({
-    primaryPattern: "<all_urls>",
-    setting: "allow",
-    scope: "regular"
-  });
-  chrome.tabs.query({
-    active: true,
-    currentWindow: true
-  }, function(arrayOfTabs) {
-    var code = 'window.location.reload();';
-    chrome.tabs.executeScript(arrayOfTabs[0].id, {
-      code: code
-    });
-  });
-  document.getElementById('jsOn').style.display = 'none';
-  document.getElementById('jsOff').style.display = 'block';
-});
-
-
-let camOff = $('#camOff');
-let camOn = $('#camOn');
 
 camOff.bind('click', function() {
   chrome.contentSettings.camera.set({
