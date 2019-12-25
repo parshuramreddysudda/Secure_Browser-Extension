@@ -22,7 +22,7 @@
 
 .toggle-group {
 	position: absolute;
-	width: 200%;
+	width: 196%;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -64,13 +64,13 @@
 	padding-top: 0;
 	padding-bottom: 0;
 	height: 100%;
-	width: 0;
+	width: 0px;
 	border-width: 0 1px
 }
 
 .toggle.btn {
-	min-width: 59px;
-	min-height: 34px
+	min-width: 69px;
+	min-height: 30px
 }
 
 .toggle-on.btn {

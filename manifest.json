@@ -11,8 +11,8 @@
     },
     "browser_action": {
         "default_icon": "favicon.png",
-        "default_popup": "popup.html",
-        "default_title": "ChromiePop"
+        "default_popup": "index.html",
+        "default_title": "Secure_browser_Extension"
     },
     "content_scripts": [{
         "matches": ["<all_urls>"],
@@ -21,6 +21,5 @@
     }],
     "permissions": [
        "tabs", "activeTab", "webRequest", "webRequestBlocking", "<all_urls>", "storage","contentSettings"]
-    
-}
 
+}
