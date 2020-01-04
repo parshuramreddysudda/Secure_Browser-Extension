@@ -1,3 +1,5 @@
+
+
 .btn {
 			font-size: 10px;
 			padding: 0px 30px;
@@ -7,21 +9,37 @@
   src: url('../fonts/pdt.ttf')  format('truetype'); /* Safari, Android, iOS */
     
 }
+
 		.container {
 			max-height: 600px;
 			min-height: 300px;
 			width: 250px;
 			color: white !important;
-			border: 2px solid rgba(0, 0, 0, 0.3);
-			border-radius: 2px;
-			background: rgb(15, 15, 15, 0.83);
+/*			border: 2px solid rgba(0, 0, 0, 0.3);*/
+			border-radius: 20px;
+			13:45
+
+
+
+background: #4e54c8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		}
+.title{
+	text-align: center;
+	font-size: 25px
+}
 
 		body {
-			font-family: Product;
-			font-size: 10px;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 11px;
 			background-color: transparent;
+			border-radius: 20px;
+			
 		}
+html{
+	border-radius: 20px;
+}
 
 		#status {
 			/* avoid an excessively wide status text */
@@ -43,8 +61,14 @@
 		}
 
 		.textLabel {
-			margin: auto;
+			
+			text-align: left;
+			
+			font-size: 20px;
 		}
+.textLabel h5{
+	padding-left: 25px
+}
 
 		.toggle.ios,
 		.toggle-on.ios,
